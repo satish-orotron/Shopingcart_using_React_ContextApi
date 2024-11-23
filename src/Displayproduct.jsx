@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { store } from './App';
 
+
 const Displayproduct = () => {
   const [data, setData] = useContext(store);
   const [name, setName] = useState("");
@@ -24,9 +25,12 @@ const Displayproduct = () => {
         <input
           type="text"
           value={name}
+          
           onChange={(e) => setName(e.target.value)} 
           placeholder="Enter the Brand Name"
+          
         />
+       {/* <button onClick={SubmitHandler}>add</button> */}
         <input type="submit" value="Add" />
       </form>
     </div>

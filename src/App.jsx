@@ -20,7 +20,7 @@ import Displayproduct from './DisplayProduct';
     <store.Provider value={[data,setData]}> 
         <center>
         
-          <Countproduct />
+          <Countproduct /> 
           <Displayproduct />
         
         </center>
